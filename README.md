@@ -1,27 +1,38 @@
-# Minimal Mistakes remote theme starter
+# Add publication/news post
+## No-code in-browser approach
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+1. Navigate to the folder "_publications" or "_news"
 
-Contains basic configuration to get you a site with:
+![Navigate to folder publications](/assets/images/add_publication_1.jpg)
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+2. Click on any publication or news file (.md) in that folder and copy it (top-right corner)
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+![Copy any publication file](assets/images/add_publication_2.jpg)
 
----
+3. Navigate back to the folder "_publicaitons" or "_news" and add a new file (top-right corner)
 
-## Troubleshooting
+![Add a file to publications](assets/images/add_publication_3.jpg)
 
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
+4. Paste the copied publication into the contents of the newly created file and name it. File name: naming convention is optional (YYYY-MM-DD-paper-name) but it should be a .md file. 
 
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+5. Adjust all the fields accordingly.
+IMPORTANT: the value in the field date must be in the YYYY-MM-DD format.
+The field author should contain all authors of this paper (possible authors listed on people.md).
+The last three fields (author_profile, collection and classes) should not be changed.
+Change the link to the paper pdf at the bottom of the file in the brackets after "Access paper here" or remove it if there is no pdf availible (yet).
+
+![Adjust fields](assets/images/add_publication_4.jpg)
+
+6. Commit the changes (top-right corner).
+
+### Additional info
+1. Escaping special characters
+If special characters are present in title, abstract or authors you can do the following.  
+When a string scalar is surrounded by single quotes '....' the only escaping within that string that can be done is inserting a double single quote to indicate a single quote:
+```
+ the user''s behavior
+```
+When string scalar is surrounded by double quotes, "....", you use backslash for escaping.
+```
+ \"user behavior\"
+```

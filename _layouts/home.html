@@ -1,0 +1,36 @@
+---
+layout: archive
+classes: wide
+author_profile: true
+---
+
+{% assign news = site.news | reverse %}
+
+{% assign publications = site.publications | reverse %}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+
+<h1 class="archive__title">Recent News</h1>
+
+
+<div class="entries-{{ entries_layout }}">
+  {% comment %}
+  to change the number of news posts shown on this page, change limit below
+  {% endcomment %}
+  {% for post in news limit:2 %}
+    {% include archive-single.html type=entries_layout %}
+    <p> </p>
+  {% endfor %}
+</div>
+
+<h1 class="archive__title">Recent Publications</h1>
+
+<div class="entries-{{ entries_layout }}">
+  {% comment %}
+  to change the number of publication posts shown on this page, change limit below
+  {% endcomment %}
+  {% for post in publications limit:2 %}
+    {% include archive-single.html type=entries_layout %}
+    <p> </p>
+  {% endfor %}
+</div>
