@@ -1,3 +1,14 @@
+VERANDA:
+    name: 'VERANDA Project'
+    bio: ''
+    avatar: '/assets/images/veranda-logo.jpg'
+    links: 
+      - label: "BMBF Project Site"
+        icon: "fas fa-fw fa-link"
+        url: "https://www.forschung-it-sicherheit-kommunikationssysteme.de/projekte/veranda"
+      - label: "TU Project Site"
+        icon: "fas fa-fw fa-link"
+        url: "https://www.tu.berlin/qu/forschung/laufende-vergangene-projekte/laufende-projekte/veranda"
 Vera:
     name: 'Vera Schmitt'
     bio: ''

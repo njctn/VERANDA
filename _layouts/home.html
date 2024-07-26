@@ -1,7 +1,9 @@
 ---
 layout: archive
 classes: wide
-author_profile: true
+
+author-profile: true
+author: VERANDA
 ---
 
 {% assign news = site.news | reverse %}
@@ -11,7 +13,6 @@ author_profile: true
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 
 <h1 class="archive__title">Recent News</h1>
-
 
 <div class="entries-{{ entries_layout }}">
   {% comment %}
