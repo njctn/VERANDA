@@ -8,12 +8,12 @@ classes: wide
 ---
 
 {% if paginator %}
-  {% assign posts = paginator.posts %}
+  {% assign news = paginator.news %}
 {% else %}
   {% assign news = site.news %}
 {% endif %}
 
-{% for post in news %}
+{% for post in news reversed %}
   {% include archive-single.html %}
   <p></p>
 {% endfor %}

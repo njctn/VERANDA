@@ -130,17 +130,14 @@ defaults:
     values:
       layout: single
       author_profile: false
-  # _projects
+  # _code
   - scope:
       path: ""
-      type: projects
+      type: code
     values:
       layout: single
       author_profile: false
       classes: wide
-      sidebar: 
-        nav: sidebar-projects
-
 
 category_archive:
   type: liquid
