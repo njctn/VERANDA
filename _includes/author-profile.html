@@ -7,15 +7,25 @@
 
     {% if author.avatar %}
       <div class="author__avatar">
+<!-- removed the link here since people does not exist on this site-->
+        {% comment %}
         <a href="{{ author.home | default: '/people/' | absolute_url }}">
+        {% endcomment %}
           <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image" class="u-photo">
+        {% comment %}
         </a>
+        {% endcomment %}
       </div>
     {% endif %}
 
     <div class="author__content">
       <h3 class="author__name p-name" itemprop="name">
+        <!-- removed the link here since people does not exist on this site-->
+        {% comment %}
         <a class="u-url" rel="me" href="{{ author.home | default: '/people/' | absolute_url }}" itemprop="url">{{ author.name }}</a>
+        {% endcomment %}
+        <!-- instead just added the author name -->
+        {{ author.name }}
       </h3>
       {% if author.bio %}
         <div class="author__bio p-note" itemprop="description">
