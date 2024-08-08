@@ -131,7 +131,7 @@ defaults:
       type: news
     values:
       layout: single
-      author_profile: false
+      author_profile: true
   # _code
   - scope:
       path: ""
